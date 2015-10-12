@@ -10,16 +10,16 @@ namespace Pt05Singlton
             var instance1 = SingltonObject.GetInstance();
             var instance2 = SingltonObject.GetInstance();
 
-            Console.WriteLine(String.Format("instance 1 Hash Code : {0}", instance1.GetHashCode()));
-            Console.WriteLine(String.Format("instance 2 Hash Code : {0}", instance2.GetHashCode()));
+            Console.WriteLine(string.Format("instance 1 Hash Code : {0}", instance1.GetHashCode()));
+            Console.WriteLine(string.Format("instance 2 Hash Code : {0}", instance2.GetHashCode()));
 
             var data = "Test data.";
 
-            Console.WriteLine(String.Format("Temp data is '{0}'.", data));
+            Console.WriteLine(string.Format("Temp data is '{0}'.", data));
 
             instance1.InstanceData = data;
 
-            Console.WriteLine(String.Format("Referenced data is '{0}'.", instance2.InstanceData));
+            Console.WriteLine(string.Format("Referenced data is '{0}'.", instance2.InstanceData));
 
             Console.ReadLine();
         }
